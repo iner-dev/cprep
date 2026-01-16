@@ -72,8 +72,8 @@ int main(int argc,char** argv){
 				#ifdef ALL_RULE
 				fprintf(makefile, "all : %s\n\n",exec_name);
 				#endif
-				#ifdef CLEAR_RULE
-				fprintf(makefile, "clear :\n	rm *.o %s\n\n",exec_name);
+				#ifdef CLEAN_RULE
+				fprintf(makefile, "clean :\n	rm *.o %s\n\n",exec_name);
 				#endif
 				#ifdef GEDIT_RULE
 				fprintf(makefile, "gedit : \n	gedit makefile *.h *.c &\n\n");
